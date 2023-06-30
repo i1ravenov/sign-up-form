@@ -1,0 +1,94 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(../fonts/Norse-Bold.otf);
+}
+
+.photo {
+  width: 40vw;
+  height: 100vh;
+  background-image: url("./img/bg.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-by {
+  text-decoration: none;
+  color: white;
+  justify-self: end;
+  position: absolute;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.odin-logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 45%);
+  width: 100%;
+  align-self: flex-start;
+}
+
+.odin {
+  font-family: norse-bold, sans-serif;
+  color: white;
+  font-size: min(4rem, 7vw);
+}
+
+.img-logo {
+  width: 100px;
+}
+
+body {
+  display: flex;
+}
+
+#log-in {
+  color: rgb(129, 141, 206);
+}
+
+.container {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.info1,
+.info2,
+p,
+.form {
+  font-size: 1.7rem;
+  padding: 50px;
+}
+
+label {
+  font-size: 1rem;
+}
+
+button {
+  background-color: rgb(206, 206, 236);
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.form {
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.call-to-action {
+  padding: 20px;
+}
+
+/* input {
+  border: #E5E7EB;
+} */

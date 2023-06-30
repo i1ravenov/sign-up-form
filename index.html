@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1>Hello World</h1>
-  
+  <div class="photo">
+    <div class="odin-logo">
+      <img src="./img/odin-logo.png" alt="odin-logo" class="img-logo"><span class="odin">Sign-up Form</span>
+    </div>
+    <div class="photo-by">Photo by <a
+        href="https://unsplash.com/@laurindc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurin
+        Dal Castel</a> on <a
+        href="https://unsplash.com/photos/qCR_bpofKjE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="info1">This is not a real online service! You know you need something like
+      this in your life to help you realize your deepest dreams.
+      Sing up <em>now</em> to get started.
+    </div>
+    <div class="info2">You <em>know</em> you want to.</div>
+    <div class="form">
+      <div class="call-to-action">Let's do this!</div>
+      <form action="">
+        <label for="name">FIRST NAME</label>
+        <input type="text" id="name" name="name">
+        <label for="last-name">LAST NAME</label>
+        <input type="text" id="last-name" name="last_name">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email">
+        <label for="phone">PHONE NUMBER</label>
+        <input type="tel" id="phone" name="phone">
+        <label for="pass">PASSWORD</label>
+        <input type="password" id="pass" name="password">
+        <label for="conf">CONFIRM PASSWORD</label>
+        <input type="password" id="conf" name="confirm">
+        <button type="submit">Create Account</button>
+      </form>
+    </div>
+
+    <p>Already have an account? <a href="#" id="log-in">Log in</a></p>
+  </div>
+
 </body>
+
 </html>
