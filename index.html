@@ -31,21 +31,33 @@
     <div class="info2">You <em>know</em> you want to.</div>
     <div class="form">
       <div class="call-to-action">Let's do this!</div>
-      <form action="">
-        <label for="name">FIRST NAME</label>
-        <input type="text" id="name" name="name">
-        <label for="last-name">LAST NAME</label>
-        <input type="text" id="last-name" name="last_name">
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" name="email">
-        <label for="phone">PHONE NUMBER</label>
-        <input type="tel" id="phone" name="phone">
-        <label for="pass">PASSWORD</label>
-        <input type="password" id="pass" name="password">
-        <label for="conf">CONFIRM PASSWORD</label>
-        <input type="password" id="conf" name="confirm">
-        <button type="submit">Create Account</button>
+      <form action="" method="post">
+        <div class="form-row">
+          <label for="name">FIRST NAME</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div class="form-row">
+          <label for="last-name">LAST NAME</label>
+          <input type="text" id="last-name" name="last_name">
+        </div>
+        <div class="form-row">
+          <label for="email">*EMAIL</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="pass">*PASSWORD</label>
+          <input type="password" id="pass" name="password" required>
+        </div>
+        <div class="form-row">
+          <label for="conf">*CONFIRM PASSWORD</label>
+          <input type="password" id="conf" name="confirm" required>
+        </div>
       </form>
+      <button type="submit">Create Account</button>
     </div>
 
     <p>Already have an account? <a href="#" id="log-in">Log in</a></p>

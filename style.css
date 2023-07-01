@@ -56,10 +56,11 @@ body {
 
 .container {
   width: 60vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .info1,
@@ -67,7 +68,7 @@ body {
 p,
 .form {
   font-size: 1.7rem;
-  padding: 50px;
+  padding: 10px;
 }
 
 label {
@@ -75,20 +76,37 @@ label {
 }
 
 button {
-  background-color: rgb(206, 206, 236);
+  display: block;
+  background-color: rgb(222, 235, 248);
   font-size: 1.5rem;
   border-radius: 5px;
 }
 
 .form {
-  width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
 }
 
 .call-to-action {
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
-/* input {
+input {
   border: #E5E7EB;
-} */
+  background-color: rgb(222, 235, 248);
+  font-size: 1.3rem;
+}
+
+input:focus {
+  border: rgb(129, 141, 206);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  gap: 10px;
+  width: max(50%, 300px);
+}
