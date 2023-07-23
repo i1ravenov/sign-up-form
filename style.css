@@ -7,10 +7,10 @@
   width: 40vw;
   height: 100vh;
   background-image: url("./img/bg.jpg");
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+span {
+  color: red;
 }
 
 .photo-by {
@@ -28,6 +28,7 @@ a {
 
 .odin-logo {
   position: relative;
+  top: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,10 +98,18 @@ input {
   border: #E5E7EB;
   background-color: rgb(222, 235, 248);
   font-size: 1.3rem;
+  border-radius: 5px;
+  width: 270px;
 }
 
 input:focus {
-  border: rgb(129, 141, 206);
+  outline: none !important;
+  border:1px solid blue;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+.error {
+  border: 1px solid red;
 }
 
 .form-row {
@@ -109,4 +118,19 @@ input:focus {
   padding-bottom: 10px;
   gap: 10px;
   width: max(50%, 300px);
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 250px;
+}
+
+#message {
+  font-size: 1rem;
 }
