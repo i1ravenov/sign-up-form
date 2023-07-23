@@ -6,7 +6,7 @@ pw.classList.add('error');
 cf.classList.add('error');
 
 var check = function () {
-  if (pw.value === cf.value) {
+  if (pw.value === cf.value && pw.value != "") {
     mg.innerHTML = '';
     pw.classList.remove('error');
     cf.classList.remove('error');
